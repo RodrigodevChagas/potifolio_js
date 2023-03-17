@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+.nav_Bar_Cor{
+    background-color: rgb(178, 248, 225);
+}
+.nav_Items_Center{
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 25% ;
+}
+
+.nav_Bar_Items_Gap{
+    
+    gap: 5%;
+}
