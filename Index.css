@@ -33,6 +33,46 @@ body{
 section{
     height: 100%;
 }
+.header_Statement{
+    padding-top: 10%;
+    
+}
+.align_Color_Fw_Ts{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow:3px 5px 3px #000000,
+                3px 5px 3px #000000,
+                3px 5px 3px #000000,
+                3px 5px 3px #000000;
+}
+/* SECTION PRESENTATION */
+.presetation_Section{
+    background-image: linear-gradient( -45deg, rgb(0, 0, 0) 80%, rgb(116, 46, 82));
+    padding: 0 10% 40% 10%;
+}
+.presentation_Container_Padding{
+    padding-top: 20%;
+}
+.welcome_Statement{
+    margin-bottom: 0;
+}
+.welcome_Statement_PColor{
+    color: crimson;
+    margin: 0px 15% 0 0%;
+}
+.little_Intro{
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow:3px 5px 3px #000000,
+                3px 5px 3px #000000,
+                3px 5px 3px #000000,
+                3px 5px 3px #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+/* SECTION ABOUT ME */
 .about_Me_Section{
     background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116));
     padding: 0 10% 10% 10%;
@@ -44,16 +84,6 @@ section{
 }
 .about_Me_Description_Div{
     width: 45%;
-}
-.header_Statement{
-    padding-top: 10%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-shadow:3px 5px 3px #000000,
-                3px 5px 3px #000000,
-                3px 5px 3px #000000,
-                3px 5px 3px #000000;
 }
 .about_Me_Description{
     text-align: justify;
@@ -78,10 +108,23 @@ section{
 }
 
 @media (max-width: 992px) {
-    .about_Me_Section {
-        padding: 0px 10% 80% 10%;
+    .about_Me_Section{
+        padding: 30% 10% 80% 10%;
     }
     .image{
         margin: 25% 0 25% 25%;
     }
 }
+@media (max-width: 1100px){
+    .presetation_Section{
+        padding: 0% 0% 90% 0%;
+    } 
+} 
+@media (max-width: 600px){
+    .presetation_Section{
+        padding: 0% 0% 160% 0%;
+    } 
+} 
+/* .presetation_Section{
+    padding: 70% 0% 90% 0%;
+} */
