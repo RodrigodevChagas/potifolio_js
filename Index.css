@@ -11,6 +11,10 @@ body{
 }
 .nav_Bar_Items_Font_Color{
     color: white;
+    text-shadow:3px 5px 3px #000000,
+    3px 5px 3px #000000,
+    3px 5px 3px #000000,
+    3px 5px 3px #000000;
 }
 .nav_Items_Center{
     font-size: 150%;
@@ -23,13 +27,16 @@ body{
 
 /* Section */
 section{
-    height: 60rem;
+    height: 100%;
 }
 .about_Me_Section{
-    background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116))
+    background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116));
+    padding: 0 10% 10% 10%;
 }
 .about_Me_Container{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .about_Me_Description_Div{
     width: 45%;
@@ -51,20 +58,35 @@ section{
 }
 
 .about_Me_Description span{
-    color: rgb(0, 38, 255);
+    color: rgb(0, 140, 255);
 }
 .img_And_Border{
-    width: 55%;
+    width: 20%;
 }
 .image{
-    padding: 10% 0 0 10%;
-    height: 60%;
-    width: 35%;
-    position: absolute;
+    margin: 45% 0 25% 25%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* sposition: absolute; */
 }
 /*No primeiro momento em que o texto comprimir, jogar a imagem para baixo dele */
-.image-border{
-    margin: 30% 0 0 40%;
-    padding: 30%;
-    outline: thick double #002fff;
+.border{
+    width: 50%;
+    outline: thick double #0044ff;
+    padding: 20%;
+    margin: -80% 40%;
+}
+.classImgBorder{
+    width: 20%;
+}
+@media (max-width: 992px) {
+    .about_Me_Section {
+        background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116));
+        padding: 0px 10% 80% 10%;
+    }
+    .image{
+        margin: 25% 0 25% 25%;
+    }
 }
