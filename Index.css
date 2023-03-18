@@ -4,7 +4,6 @@ body{
     background-color: aquamarine;
     font-family: 'Poppins', sans-serif;
 }
-
 /* NavBar */
 .nav_Bar_Cor{
     background-color: rgb(27, 27, 27);
@@ -23,8 +22,13 @@ body{
 }
 .nav_Bar_Items_Gap{
     gap: 5%;
+    width: 125%;
 }
-
+/* icones */
+.social_Media_Icons_Div{
+    margin: 0% 0px 6% -6.5%;
+    gap: 10px;
+}
 /* Section */
 section{
     height: 100%;
@@ -56,12 +60,8 @@ section{
     color: white;
     font-size: 120%;
 }
-
 .about_Me_Description span{
     color: rgb(0, 140, 255);
-}
-.img_And_Border{
-    width: 20%;
 }
 .image{
     margin: 45% 0 25% 25%;
@@ -69,21 +69,16 @@ section{
     display: flex;
     justify-content: center;
     position: relative;
-    /* sposition: absolute; */
 }
-/*No primeiro momento em que o texto comprimir, jogar a imagem para baixo dele */
 .border{
     width: 50%;
     outline: thick double #0044ff;
     padding: 20%;
     margin: -80% 40%;
 }
-.classImgBorder{
-    width: 20%;
-}
+
 @media (max-width: 992px) {
     .about_Me_Section {
-        background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116));
         padding: 0px 10% 80% 10%;
     }
     .image{
