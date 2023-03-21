@@ -27,7 +27,8 @@ body{
 }
 /* icones */
 .social_Media_Icons_Div{
-    margin: 0% 0px 6% -6.5%;
+    left: 3%;
+    top: 80%;
     gap: 10px;
 }
 /* Section */
@@ -49,7 +50,6 @@ section{
             /* SECTION PRESENTATION */
 .presentation_Section{
     background-image: linear-gradient( -45deg, rgb(0, 0, 0) 75%,#648285);
-    padding: 0 10% 30% 10%;
 }
 .presentation_Container_Padding{
     padding-top: 20%;
@@ -57,9 +57,10 @@ section{
     flex-direction: column;
     align-items: center;
 }
-.welcome_Statement{
+.welcome_Statement, .about_Me_Description, .experience_Description{
     margin-bottom: 0;
     text-align: justify;
+    color: white;
 }
 .welcome_Statement_PColor{
     color:#00ff99;
@@ -72,7 +73,6 @@ section{
 /* SECTION ABOUT ME */
 .about_Me_Section{
     background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%,#93ccc6);
-    padding: 0 10% 10% 10%;
 }
 .about_Me_Container{
     display: flex;
@@ -82,12 +82,10 @@ section{
 .about_Me_Description_Div{
     width: 45%;
 }
-.about_Me_Description{
-    text-align: justify;
-    color: white;
+.about_Me_Description, .experience_Description{
     font-size: 16px;
 }
-.about_Me_Description span{
+.about_Me_Description span, .experience_Description span{
     color:#00e1ff;
 }
 .image{
@@ -104,10 +102,11 @@ section{
     margin: -80% 40%;
 }
 .experience_Section{
-    background-image: linear-gradient( 45deg, rgb(0, 0, 0) 71%,#93ccc6);
-    padding: 0 10% 10% 10%;
+    background-image: linear-gradient( 45deg, rgb(0, 0, 0) 70%,#93ccc6);
 }
-
+.containerHeight_900px{
+    height: 900px;
+}
 a {
     color: #005f6b;
     text-decoration: underline;
