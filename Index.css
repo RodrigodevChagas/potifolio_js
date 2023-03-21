@@ -3,10 +3,11 @@
 body{
     background-color: aquamarine;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 /* NavBar */
 .nav_Bar_Cor{
-    background-color: rgb(27, 27, 27);
+    background-color:#1f1f1f;
 }
 .nav_Bar_Items_Font_Color{
     color: white;
@@ -35,21 +36,20 @@ section{
 }
 .header_Statement{
     padding-top: 10%;
-    
 }
 .align_Color_Fw_Ts{
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow:3px 5px 3px #000000,
-                3px 5px 3px #000000,
-                3px 5px 3px #000000,
+    3px 5px 3px #000000,
+    3px 5px 3px #000000,
                 3px 5px 3px #000000;
-}
-/* SECTION PRESENTATION */
-.presetation_Section{
-    background-image: linear-gradient( -45deg, rgb(0, 0, 0) 80%, rgb(116, 46, 82));
-    padding: 0 10% 40% 10%;
+            }
+            /* SECTION PRESENTATION */
+.presentation_Section{
+    background-image: linear-gradient( -45deg, rgb(0, 0, 0) 75%,#648285);
+    padding: 0 10% 30% 10%;
 }
 .presentation_Container_Padding{
     padding-top: 20%;
@@ -62,15 +62,16 @@ section{
     text-align: justify;
 }
 .welcome_Statement_PColor{
-    color: crimson;
+    color:#00ff99;
 }
 .little_Intro{
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 /* SECTION ABOUT ME */
 .about_Me_Section{
-    background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%, rgb(46, 46, 116));
+    background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%,#93ccc6);
     padding: 0 10% 10% 10%;
 }
 .about_Me_Container{
@@ -84,40 +85,51 @@ section{
 .about_Me_Description{
     text-align: justify;
     color: white;
-    font-size: 120%;
+    font-size: 16px;
 }
 .about_Me_Description span{
-    color: rgb(0, 140, 255);
+    color:#00e1ff;
 }
 .image{
-    margin: 45% 0 25% 25%;
-    width: 50%;
+    margin: 40% 0% 33% 37%;
+    width: 45%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 .border{
-    width: 50%;
-    outline: thick double #0044ff;
+    width: 45%;
+    outline: #005f6b double thick;
     padding: 20%;
     margin: -80% 40%;
 }
+.experience_Section{
+    background-image: linear-gradient( 45deg, rgb(0, 0, 0) 71%,#93ccc6);
+    padding: 0 10% 10% 10%;
+}
 
+a {
+    color: #005f6b;
+    text-decoration: underline;
+}
+/* media query */
+@media (max-width: 1250px){
+    .presentation_Section{
+        padding: 0% 0% 90% 0%;
+    }
+}
+@media (max-width: 600px){
+    .presentation_Section{
+        padding: 0% 0% 160% 0%;
+    }
+}
 @media (max-width: 992px) {
-    .about_Me_Section{
+    .about_Me_Section, .experience_Section{
         padding: 30% 10% 80% 10%;
     }
     .image{
         margin: 25% 0 25% 25%;
     }
+
 }
-@media (max-width: 1100px){
-    .presetation_Section{
-        padding: 0% 0% 90% 0%;
-    }
-}
-@media (max-width: 600px){
-    .presetation_Section{
-        padding: 0% 0% 160% 0%;
-    }
-}
+
