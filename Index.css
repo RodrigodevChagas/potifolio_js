@@ -46,7 +46,7 @@ section{
     height: 100%;
 }
 .container{
-    margin-left: 6%;
+    max-width: 1048px;
 }
 .header_Statement{
     padding-top: 10%;
@@ -131,8 +131,20 @@ section{
     gap: 10px;
     height: 500px;
 }
+.card-body{
+    text-align: center;
+
+}
+/* PROJECTS */
+.card{
+    display: grid;
+    align-items: center;
+    width: 18rem;
+    height: 600px;
+}
 /* media query */
-/* @media (max-width: 1250px){
+/*
+@media (max-width: 1250px){
     .presentation_Section{
         padding: 0% 0% 90% 0%;
     }
