@@ -5,6 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+
 /* NavBar */
 .nav_Bar_Cor{
     background-color:#1f1f1f;
@@ -25,15 +26,27 @@ body{
     gap: 5%;
     width: 125%;
 }
+
 /* icones */
 .social_Media_Icons_Div{
     left: 3%;
     top: 80%;
     gap: 10px;
 }
+a {
+    color: #005f6b;
+    text-decoration: underline;
+}
+
 /* Section */
+.containerHeight_900px{
+    height: 900px;
+}
 section{
     height: 100%;
+}
+.container{
+    margin-left: 6%;
 }
 .header_Statement{
     padding-top: 10%;
@@ -45,9 +58,10 @@ section{
     text-shadow:3px 5px 3px #000000,
     3px 5px 3px #000000,
     3px 5px 3px #000000,
-                3px 5px 3px #000000;
-            }
-            /* SECTION PRESENTATION */
+    3px 5px 3px #000000;
+}
+
+/* SECTION PRESENTATION */
 .presentation_Section{
     background-image: linear-gradient( -45deg, rgb(0, 0, 0) 75%,#648285);
 }
@@ -85,7 +99,7 @@ section{
 .about_Me_Description, .experience_Description{
     font-size: 16px;
 }
-.about_Me_Description span, .experience_Description span{
+.about_Me_Description span{
     color:#00e1ff;
 }
 .image{
@@ -101,18 +115,24 @@ section{
     padding: 20%;
     margin: -80% 40%;
 }
+
+/* Experience */
 .experience_Section{
     background-image: linear-gradient( 45deg, rgb(0, 0, 0) 70%,#93ccc6);
 }
-.containerHeight_900px{
-    height: 900px;
+.experience_Description span{
+    color:#00ffaa;
 }
-a {
-    color: #005f6b;
-    text-decoration: underline;
+.tech_Logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
 }
 /* media query */
-@media (max-width: 1250px){
+/* @media (max-width: 1250px){
     .presentation_Section{
         padding: 0% 0% 90% 0%;
     }
@@ -129,6 +149,5 @@ a {
     .image{
         margin: 25% 0 25% 25%;
     }
-
-}
+} */
 
