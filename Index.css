@@ -142,6 +142,9 @@ section{
     width: 18rem;
     height: 600px;
 }
+.ul li{
+    color: white;
+}
 /* media query */
 /*
 @media (max-width: 1250px){
