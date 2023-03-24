@@ -186,7 +186,51 @@
         <section>
             <div class="experience_Section containerHeight_900px">
                 <h1 class="header_Statement align_Color_Fw_Ts">CERTIFICATIONS</h1>
-                <ul class="ul"></ul>
+                <swiper-container init="false" class="mySwiper">
+                <swiper-slide>Certificado 1</swiper-slide>
+                <swiper-slide>Certificado 2</swiper-slide>
+                <swiper-slide>Certificado 3</swiper-slide>
+                <swiper-slide>Certificado 4</swiper-slide>
+                <swiper-slide>Certificado 5</swiper-slide>
+                <swiper-slide>Certificado 6</swiper-slide>
+                <swiper-slide>Certificado 7</swiper-slide>
+                <swiper-slide>Certificado 8</swiper-slide>
+                <swiper-slide>Certificado 9</swiper-slide>
+                <swiper-slide>Certificado 9</swiper-slide>
+                <swiper-slide>Certificado 10</swiper-slide>
+                <swiper-slide>Certificado 12</swiper-slide>
+                <swiper-slide>Certificado 13</swiper-slide>
+                <swiper-slide>Certificado 14</swiper-slide>
+                <swiper-slide>Certificado 15</swiper-slide>
+                <swiper-slide>Certificado 16</swiper-slide>
+                <swiper-slide>Certificado 17</swiper-slide>
+                <swiper-slide>Certificado 18</swiper-slide>
+                <swiper-slide>Certificado 19</swiper-slide>
+                <swiper-slide>Certificado 20</swiper-slide>
+                <swiper-slide>Certificado 21</swiper-slide>
+                <swiper-slide>Certificado 22</swiper-slide>
+                <swiper-slide>Certificado 23</swiper-slide>
+                <swiper-slide>Certificado 24</swiper-slide>
+                </swiper-container>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+                <script>
+                var swiperEl = document.querySelector(".mySwiper");
+                Object.assign(swiperEl, {
+                    grabCursor: true,
+                    effect: "creative",
+                    creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: [0, 0, -400],
+                    },
+                    next: {
+                        translate: ["100%", 0, 0],
+                    },
+                    },
+                });
+                swiperEl.initialize()
+                </script>
             </div>
         </section>
 </main>

@@ -1,4 +1,4 @@
-const ul = document.querySelector('.ul');
+// const ul = document.querySelector('.ul');
 const carouselIndicators = document.querySelector('.carousel-indicators');
 const carouselInner = document.querySelector('.carousel-inner');
 
@@ -25,7 +25,7 @@ function getApiGitHub() {
             data.map(item =>{
                 carouselIndicators.innerHTML +=`
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${data.indexOf(item)}" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
+                aria-current="true" aria-label="Slide ${data.indexOf(item)}"></button>
                 `;
                 carouselInner.innerHTML +=`
                 <div class="carousel-item" data-bs-interval="3000">
