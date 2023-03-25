@@ -1,6 +1,6 @@
-// const ul = document.querySelector('.ul');
 const carouselIndicators = document.querySelector('.carousel-indicators');
 const carouselInner = document.querySelector('.carousel-inner');
+var swiperEl = document.querySelector(".mySwiper");
 
 function getApiGitHub() {
     const url = 'https://api.github.com/users/RodrigodevChagas/repos';
@@ -50,4 +50,21 @@ function getApiGitHub() {
 
         }).catch(e => console.log(e.message));
 }
+
+Object.assign(swiperEl, {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+    prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+    },
+    next: {
+        translate: ["100%", 0, 0],
+    },
+    },
+});
+
+
+swiperEl.initialize()
 getApiGitHub();
