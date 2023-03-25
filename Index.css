@@ -166,20 +166,25 @@ section{
         margin: 25% 0 25% 25%;
     }
 } */
+
+/*Certificados*/
 swiper-container {
-    margin: 100px auto;
+    margin: 20px auto;
     width: 320px;
     height: 240px;
-  }
+}
+.swiperDiv{
+    margin: 0 250px;
+}
 
-  swiper-slide {
+swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-  }
+}
 
 swiper-slide:nth-child(1n) {
 background-color: rgb(206, 17, 17);
