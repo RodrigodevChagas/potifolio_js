@@ -175,6 +175,12 @@ swiper-container {
 }
 .swiperDiv{
     margin: 0 250px;
+    gap: 50px;
+    justify-content: center;
+}
+.swiperDiv h3, .swiperTopDiv h3{
+    text-align: center;
+    color: white;
 }
 
 swiper-slide {
@@ -184,45 +190,49 @@ swiper-slide {
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+    padding: 0 50px;
 }
-
-swiper-slide:nth-child(1n) {
-background-color: rgb(206, 17, 17);
+.mySwiper:nth-child(1n){
+    background-color: rgb(86, 2, 255);
 }
-
+.mySwiper2:nth-child(1n) {
+    background-color: rgb(54, 94, 77);
+}
+.mySwiper3:nth-child(1n) {
+    background-color: rgb(7, 69, 11);
+}
 swiper-slide:nth-child(2n) {
 background-color: rgb(0, 140, 255);
 }
-
-swiper-slide:nth-child(3n) {
+swiper-slide:nth-child(3n){
 background-color: rgb(10, 184, 111);
 }
-
 swiper-slide:nth-child(4n) {
 background-color: rgb(211, 122, 7);
 }
-
 swiper-slide:nth-child(5n) {
 background-color: rgb(118, 163, 12);
 }
-
 swiper-slide:nth-child(6n) {
 background-color: rgb(180, 10, 47);
 }
-
 swiper-slide:nth-child(7n) {
 background-color: rgb(35, 99, 19);
 }
-
 swiper-slide:nth-child(8n) {
 background-color: rgb(0, 68, 255);
 }
-
-swiper-slide:nth-child(9n) {
+swiper-slide:nth-child(9n)  {
 background-color: rgb(218, 12, 218);
 }
 
 swiper-slide:nth-child(10n) {
 background-color: rgb(54, 94, 77);
 }
-
+swiper-slide a{
+    text-decoration: none;
+    color:white;
+}
+swiper-slide a:hover{
+    color: #00ffaa;
+}
