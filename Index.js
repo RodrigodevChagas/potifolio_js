@@ -37,6 +37,10 @@ function getApiGitHub()
             if (!response.ok)
                 throw new Error(response.statusText);
             var data =  await response.json();
+            carouselIndicators.innerHTML =`
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+            `;
             carouselInner.innerHTML = `
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="card w-100">
@@ -45,8 +49,8 @@ function getApiGitHub()
                         </div>
                     </div>
                 </div>`;
-            data.map(item =>{
-                let index = data.indexOf(item) + 1;
+            data.map((item, index) =>{
+                //let index = data.indexOf(item) + 1;
                 let dateString = data[index].created_at;
                 let date = new Date(dateString);
                 let day = date.getUTCDate().toString().padStart(2, "0");
@@ -54,8 +58,7 @@ function getApiGitHub()
                 let year = date.getUTCFullYear().toString();
                 let dateFormat = `${month}/${day}/${year}`;
                 carouselIndicators.innerHTML +=`
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${data.indexOf(item)}" class="active"
-                aria-current="true" aria-label="Slide ${data.indexOf(item)}"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${index + 1}" aria-label="Slide ${index + 1 }"></button>
                 `;
                 carouselInner.innerHTML +=`
                 <div class="carousel-item" data-bs-interval="3000">
@@ -75,14 +78,7 @@ function getApiGitHub()
     .catch(e => console.log(e.message));
 }
 
-function swiperElement(certification, certificationUrl, elements, index){
-    if(index < 13){
-        elements = elements[0]
-    }
-    else if(index > 12 && index <23){
-        elements = elements[1]
-    }
-    else{ elements = elements[2]}
+function swiperElement(certification, certificationUrl, elements){
     elements.innerHTML += `
     <swiper-slide class="swiperSlide">
     <div class="swiperTextAndLink">
@@ -95,7 +91,19 @@ function certificationsSwiper(){
     const Certification =[...cSharpCertifications, ...pythonCertifications, ...frontEndCertifications ];
     const certificationUrl = [...cSharpCertificationsCredentials, ...pythonCertificationsCredentials, ...frontEndCertifications];
     const elements = [swiperEl, swiperEl2, swiperEl3];
-    return Certification.map((certification, index) => swiperElement(certification, `${ aluraCertificateUrl + certificationUrl[index]}`, elements, index))
+    return Certification.map((certification, index) => {
+        let element;
+
+        if(index < 13){
+            element = elements[0]
+        }
+        else if(index > 12 && index <23){
+            element = elements[1]
+        }
+        else{ element = elements[2]}
+
+        swiperElement(certification, `${aluraCertificateUrl + certificationUrl[index]}`, element)
+    });
 }
 
 function assignToObject(){
