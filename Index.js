@@ -41,14 +41,18 @@ function getApiGitHub()
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="card w-100">
                         <div class="card-body">
-                            <h5 class="card-title">${data[0].name}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">${data[0].url}Programming Language</h6>
-                            <a href="#" class="card-link">${data[0].url}</a>
-                            <a href="#" class="card-link">Linkedin video project link</a>
+                            <h5 class="card-title">Here are my projects available on GitHub</h5>
                         </div>
                     </div>
                 </div>`;
             data.map(item =>{
+                let index = data.indexOf(item) + 1;
+                let dateString = data[index].created_at;
+                let date = new Date(dateString);
+                let day = date.getUTCDate().toString().padStart(2, "0");
+                let month = (date.getUTCMonth() + 1).toString().padStart(2, "0");
+                let year = date.getUTCFullYear().toString();
+                let dateFormat = `${month}/${day}/${year}`;
                 carouselIndicators.innerHTML +=`
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="${data.indexOf(item)}" class="active"
                 aria-current="true" aria-label="Slide ${data.indexOf(item)}"></button>
@@ -57,47 +61,51 @@ function getApiGitHub()
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="card w-100">
                         <div class="card-body">
-                            <h5 class="card-title">${data[data.indexOf(item) + 2].name}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Programming Language</h6>
-                            <a href="#" class="card-link">Github Repository link</a>
+                            <h5 class="card-title">${data[index].name}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Language: ${data[index].language}</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Creation Date: ${dateFormat}</h6>
+                            <a href="${data[index].html_url}" class="card-link">Github Repository</a>
                             <a href="#" class="card-link">Linkedin video project link</a>
                         </div>
                     </div>
                 </div>
-                `
-            })
+                `;
+            });
         })
     .catch(e => console.log(e.message));
 }
 
 function certificationsSwiper(){
     cSharpCertifications.map(certification => {
+        let credentials = cSharpCertificationsCredentials[cSharpCertifications.indexOf(certification)];
         swiperEl.innerHTML += `
         <swiper-slide class="swiperSlide">
             <div class="swiperTextAndLink">
                 <p>${certification}</p>
-                <a href="${aluraCertificateUrl + cSharpCertificationsCredentials[cSharpCertifications.indexOf(certification)]}">See Certification</a>
+                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
             </div>
-        </swiper-slide>`
-    })
+        </swiper-slide>`;
+    });
     pythonCertifications.map(certification => {
+        let credentials = pythonCertificationsCredentials[pythonCertifications.indexOf(certification)];
         swiperEl2.innerHTML += `
         <swiper-slide class="swiperSlide2">
             <div class="swiperTextAndLink">
                 <p>${certification}</p>
-                <a href="${aluraCertificateUrl + pythonCertificationsCredentials[pythonCertifications.indexOf(certification)]}">See Certification</a>
+                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
             </div>
-        </swiper-slide>`
-    })
+        </swiper-slide>`;
+    });
     frontEndCertifications.map(certification => {
+        let credentials = frontEndCertificationsCredentials[frontEndCertifications.indexOf(certification)];
         swiperEl3.innerHTML += `
         <swiper-slide class="swiperSlide3">
             <div class="swiperTextAndLink">
                 <p>${certification}</p>
-                <a href="${aluraCertificateUrl + frontEndCertificationsCredentials[frontEndCertifications.indexOf(certification)]}">See Certification</a>
+                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
             </div>
-        </swiper-slide>`
-    })
+        </swiper-slide>`;
+    });
 }
 function assignToObject(){
     for(var swiper = 0; swiper < swipers; swiper++)
