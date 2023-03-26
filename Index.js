@@ -75,38 +75,29 @@ function getApiGitHub()
     .catch(e => console.log(e.message));
 }
 
-function certificationsSwiper(){
-    cSharpCertifications.map(certification => {
-        let credentials = cSharpCertificationsCredentials[cSharpCertifications.indexOf(certification)];
-        swiperEl.innerHTML += `
-        <swiper-slide class="swiperSlide">
-            <div class="swiperTextAndLink">
-                <p>${certification}</p>
-                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
-            </div>
-        </swiper-slide>`;
-    });
-    pythonCertifications.map(certification => {
-        let credentials = pythonCertificationsCredentials[pythonCertifications.indexOf(certification)];
-        swiperEl2.innerHTML += `
-        <swiper-slide class="swiperSlide2">
-            <div class="swiperTextAndLink">
-                <p>${certification}</p>
-                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
-            </div>
-        </swiper-slide>`;
-    });
-    frontEndCertifications.map(certification => {
-        let credentials = frontEndCertificationsCredentials[frontEndCertifications.indexOf(certification)];
-        swiperEl3.innerHTML += `
-        <swiper-slide class="swiperSlide3">
-            <div class="swiperTextAndLink">
-                <p>${certification}</p>
-                <a href="${aluraCertificateUrl + credentials}">See Certification</a>
-            </div>
-        </swiper-slide>`;
-    });
+function swiperElement(certification, certificationUrl, elements, index){
+    if(index < 13){
+        elements = elements[0]
+    }
+    else if(index > 12 && index <23){
+        elements = elements[1]
+    }
+    else{ elements = elements[2]}
+    elements.innerHTML += `
+    <swiper-slide class="swiperSlide">
+    <div class="swiperTextAndLink">
+    <p>${certification}</p>
+    <a href="${certificationUrl}">See Certification</a>
+    </div>
+    </swiper-slide>`;
 }
+function certificationsSwiper(){
+    const Certification =[...cSharpCertifications, ...pythonCertifications, ...frontEndCertifications ];
+    const certificationUrl = [...cSharpCertificationsCredentials, ...pythonCertificationsCredentials, ...frontEndCertifications];
+    const elements = [swiperEl, swiperEl2, swiperEl3];
+    return Certification.map((certification, index) => swiperElement(certification, `${ aluraCertificateUrl + certificationUrl[index]}`, elements, index))
+}
+
 function assignToObject(){
     for(var swiper = 0; swiper < swipers; swiper++)
     {
