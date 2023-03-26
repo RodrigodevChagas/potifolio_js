@@ -141,6 +141,10 @@ section{
     align-items: center;
     width: 18rem;
     height: 600px;
+    background-color: #001f36;
+}
+.card h5{
+    color:white !important;
 }
 .ul li{
     color: white;
@@ -193,46 +197,53 @@ swiper-slide {
     padding: 0 50px;
 }
 .mySwiper:nth-child(1n){
-    background-color: rgb(86, 2, 255);
+    background-color: rgb(0, 36, 135);
 }
 .mySwiper2:nth-child(1n) {
     background-color: rgb(54, 94, 77);
 }
 .mySwiper3:nth-child(1n) {
-    background-color: rgb(7, 69, 11);
+    background-color: #21155e;
 }
 swiper-slide:nth-child(2n) {
-background-color: rgb(0, 140, 255);
+background-color: #2f2f65;
 }
 swiper-slide:nth-child(3n){
-background-color: rgb(10, 184, 111);
+background-color: #006492;
 }
 swiper-slide:nth-child(4n) {
-background-color: rgb(211, 122, 7);
+background-color: rgb(60, 0, 0);
 }
 swiper-slide:nth-child(5n) {
-background-color: rgb(118, 163, 12);
+background-color: rgb(0, 72, 71);
 }
 swiper-slide:nth-child(6n) {
-background-color: rgb(180, 10, 47);
+background-color: rgb(63, 0, 79);
 }
 swiper-slide:nth-child(7n) {
 background-color: rgb(35, 99, 19);
 }
 swiper-slide:nth-child(8n) {
-background-color: rgb(0, 68, 255);
+background-color: rgb(0, 29, 110);
 }
 swiper-slide:nth-child(9n)  {
-background-color: rgb(218, 12, 218);
+background-color: rgb(44, 0, 38);
 }
 
 swiper-slide:nth-child(10n) {
 background-color: rgb(54, 94, 77);
 }
 swiper-slide a{
-    text-decoration: none;
-    color:white;
+    color: white;
+    font-family: auto;
+    font-size: 16px;
 }
 swiper-slide a:hover{
-    color: #00ffaa;
+    color: rgb(197, 197, 0);
+    transition: 2ms;
+}
+.swiperTextAndLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -72,13 +72,31 @@ function getApiGitHub()
 
 function certificationsSwiper(){
     cSharpCertifications.map(certification => {
-        swiperEl.innerHTML += `<swiper-slide class="swiperSlide"><a href="${aluraCertificateUrl + cSharpCertificationsCredentials[cSharpCertifications.indexOf(certification)]}">${certification}</a></swiper-slide>`
+        swiperEl.innerHTML += `
+        <swiper-slide class="swiperSlide">
+            <div class="swiperTextAndLink">
+                <p>${certification}</p>
+                <a href="${aluraCertificateUrl + cSharpCertificationsCredentials[cSharpCertifications.indexOf(certification)]}">See Certification</a>
+            </div>
+        </swiper-slide>`
     })
     pythonCertifications.map(certification => {
-        swiperEl2.innerHTML += `<swiper-slide class="swiperSlide2"><a href="${aluraCertificateUrl + pythonCertificationsCredentials[pythonCertifications.indexOf(certification)]}">${certification}</a></swiper-slide>`
+        swiperEl2.innerHTML += `
+        <swiper-slide class="swiperSlide2">
+            <div class="swiperTextAndLink">
+                <p>${certification}</p>
+                <a href="${aluraCertificateUrl + pythonCertificationsCredentials[pythonCertifications.indexOf(certification)]}">See Certification</a>
+            </div>
+        </swiper-slide>`
     })
     frontEndCertifications.map(certification => {
-        swiperEl3.innerHTML += `<swiper-slide class="swiperSlide3"><a href="${aluraCertificateUrl + frontEndCertificationsCredentials[frontEndCertifications.indexOf(certification)]}">${certification}</a></swiper-slide>`
+        swiperEl3.innerHTML += `
+        <swiper-slide class="swiperSlide3">
+            <div class="swiperTextAndLink">
+                <p>${certification}</p>
+                <a href="${aluraCertificateUrl + frontEndCertificationsCredentials[frontEndCertifications.indexOf(certification)]}">See Certification</a>
+            </div>
+        </swiper-slide>`
     })
 }
 function assignToObject(){
