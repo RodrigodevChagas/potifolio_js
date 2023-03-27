@@ -131,11 +131,13 @@ section{
     gap: 10px;
     height: 500px;
 }
+/* PROJECTS */
+.carousel-dark button span{
+    background-color:black;
+}
 .card-body{
     text-align: center;
-
 }
-/* PROJECTS */
 .projects_Section{
     background-image: linear-gradient( 225deg, rgb(0, 0, 0) 70%,#004f47);
 }
@@ -144,10 +146,18 @@ section{
     align-items: center;
     width: 18rem;
     height: 600px;
-    background-color: #001f36;
+    background-size: cover;
+    background-position: center;
+    background-image: url(black-background.png);
 }
 .card h5{
-    color:white !important;
+    color:white;
+}
+.card h6{
+    color : #ffbc00;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: #00ffe7;
 }
 .ul li{
     color: white;

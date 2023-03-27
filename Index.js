@@ -51,25 +51,25 @@ function getApiGitHub()
                 if(index < 1){
                 carouselIndicators.innerHTML = buttonElement;
     
-                carouselInner.innerHTML = `
+                carouselInner.innerHTML += `
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="card w-100">
-                            <div class="card-body">
-                                <h5 class="card-title">Here are my projects available on GitHub</h5>
+                    
+                    <div class="card w-100 img-fluid" >
+                    <div class="card-body">
+                    <h5 class="card-title">Here are my projects available on GitHub</h5>
                                 </div>
                                 </div>
                                 </div>`;
                 }
                 else{
-                    carouselIndicators.innerHTML += buttonElement
-
+                    carouselIndicators.innerHTML += buttonElement;
                     carouselInner.innerHTML +=`
                     <div class="carousel-item" data-bs-interval="3000">
                         <div class="card w-100">
                             <div class="card-body">
                                 <h5 class="card-title">${item.name}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Language: ${item.language}</h6>
-                                <h6 class="card-subtitle mb-2 text-muted">Creation Date: ${date}</h6>
+                                <h6 class="card-subtitle mb-2 ">Language: ${item.language}</h6>
+                                <h6 class="card-subtitle mb-2 ">Creation Date: ${date}</h6>
                                 <a href="${item.html_url}" class="card-link">Github Repository</a>
                                 <a href="#" class="card-link">Linkedin video project link</a>
                             </div>
