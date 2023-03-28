@@ -44,13 +44,12 @@ a {
 }
 section{
     height: 100%;
+    padding-top: 7%;
 }
 .container{
     max-width: 1048px;
 }
-.header_Statement{
-    padding-top: 10%;
-}
+
 .align_Color_Fw_Ts{
     text-align: center;
     color: rgb(255, 255, 255);
@@ -97,7 +96,18 @@ section{
     width: 45%;
 }
 .about_Me_Description, .experience_Description{
+    transition: 1s;
     font-size: 16px;
+}
+
+.about_Me_Description_Text h5:hover{
+    transition: 0.5s;
+    background-color: #00408f1d;
+}
+.about_Me_Description_Text span:hover{
+    transition: 0.5s;
+    background-color: #1e00ff2e;
+    font-weight: bold;
 }
 .about_Me_Description span{
     color:#00e1ff;
@@ -130,6 +140,9 @@ section{
     align-items: center;
     gap: 10px;
     height: 500px;
+}
+.tech_Logos img:hover{
+    height: 100px;
 }
 /* PROJECTS */
 .carousel-dark button span{
@@ -193,9 +206,16 @@ section{
 } */
 
 /*Certificados*/
-.certifications_Section{
+.sectionCertifications{
+    padding-top: 0%;
+}
+.certifications_Container{
     background-image: linear-gradient( 315deg, rgb(0, 0, 0) 70%,#004f47);
 }
+.certifications_Container h1{
+    padding-top: 7%;
+}
+
 swiper-container {
     margin: 20px auto;
     width: 320px;
@@ -258,6 +278,7 @@ swiper-slide:nth-child(10n) {
 background-color: rgb(54, 94, 77);
 }
 swiper-slide a{
+    transition: 0.5s;
     color: white;
     font-family: auto;
     font-size: 16px;
@@ -270,4 +291,8 @@ swiper-slide a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+swiper-slide a:hover{
+    transition: 0.5s;
+    font-size: 24px;
 }

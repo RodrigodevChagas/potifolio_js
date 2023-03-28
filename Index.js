@@ -95,7 +95,7 @@ function swiperElement(certification, certificationUrl, elements){
     <swiper-slide class="swiperSlide">
     <div class="swiperTextAndLink">
     <p>${certification}</p>
-    <a href="${certificationUrl}">See Certification</a>
+    <a class="actionLinkCertifications" href="${certificationUrl}">See Certification</a>
     </div>
     </swiper-slide>`;
 }
