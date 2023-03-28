@@ -133,6 +133,7 @@ section{
 }
 /* PROJECTS */
 .carousel-dark button span{
+    transition:0.4s;
     background-color:black;
 }
 .card-body{
@@ -141,7 +142,8 @@ section{
 .projects_Section{
     background-image: linear-gradient( 225deg, rgb(0, 0, 0) 70%,#004f47);
 }
-.card{
+.card {
+    transition:0.4s;
     display: grid;
     align-items: center;
     width: 18rem;
@@ -149,6 +151,12 @@ section{
     background-size: cover;
     background-position: center;
     background-image: url(black-background.png);
+}
+.card:hover{
+    transition: 0.2s ease-in;
+    background-size: cover;
+    background-position: center;
+    background-image: url(black-background.jpg);
 }
 .card h5{
     color:white;
