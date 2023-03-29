@@ -102,11 +102,12 @@ section{
 
 .about_Me_Description_Text h5:hover{
     transition: 0.5s;
-    background-color: #00408f1d;
+    background-color: #00408f35;
+    box-shadow: 5px 5px 13px 13px #00408f39;
 }
 .about_Me_Description_Text span:hover{
     transition: 0.5s;
-    background-color: #1e00ff2e;
+    background-color: #1e00ff56;
     font-weight: bold;
 }
 .about_Me_Description span{
@@ -142,7 +143,7 @@ section{
     height: 500px;
 }
 .tech_Logos img:hover{
-    height: 100px;
+    height: 15%;
 }
 /* PROJECTS */
 .carousel-dark button span{
