@@ -121,8 +121,6 @@ h1{
 .about_Me_Description span{
     color:#00e1ff;
 }
-
-
 .divImgAboutMe{
     height: 226px;
 }
@@ -137,9 +135,11 @@ h1{
     outline: #3c1f80 double thick;
     padding: 20%;
     margin: -50% 0 0 40%;
-    background-image: url(black-background.jpg);
+    background-image: url(black-background.png);
 }
-
+.social_Media_Icons_Div2{
+    display: none;
+}
 
 /* Experience */
 .experience_Section{
@@ -209,20 +209,38 @@ h1{
     section{
         display: inline-table;
     }
+    .social_Media_Icons_Div a{
+        display: none;
+    }
     .divImgAboutMe{
         display: flex;
         justify-content: center;
     }
     .image{
-        margin: 10% 0;
+        margin: 10% 0 5% 0;
+        max-width: 160px;
+        border-radius: 100%;
+        width: 100%;
     }
-    .divImgAboutMe div{
+    .centerDivImgMobile{
+        justify-content: center ;
+        margin-bottom: 5%;
+    }
+    .divImgAboutMe{
+        display: flex;
+        justify-content: center;
+        }
+    .border{
         display: none;
     }
     .container{
         /* max-width: 376px; */
         width: auto;
         padding-top: 10%;
+    }
+    .social_Media_Icons_Div2{
+        display: flex;
+        gap: 13px;
     }
     .swiperDiv{
         display: flex;
