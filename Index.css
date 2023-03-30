@@ -5,7 +5,10 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+}
 /* NavBar */
 .nav_Bar_Cor{
     background-color:#1f1f1f;
@@ -39,14 +42,15 @@ a {
 }
 
 /* Section */
-.containerHeight_900px{
-    height: 900px;
+.containerHeight_700px{
+    height: 700px;
 }
 section{
     height: 100%;
 }
 .container{
     max-width: 1048px;
+    padding-top: 10%;
 }
 
 .align_Color_Fw_Ts{
@@ -59,6 +63,10 @@ section{
     3px 5px 3px #000000;
 }
 
+/*TITLES*/
+h1{
+    margin-bottom: 30px;
+}
 /* SECTION PRESENTATION */
 .presentation_Section{
     background-image: linear-gradient( -45deg, rgb(0, 0, 0) 75%,#48797e);
@@ -79,7 +87,6 @@ section{
     margin-top: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
-
 /* SECTION ABOUT ME */
 .about_Me_Section{
     background-image: linear-gradient( 135deg, rgb(0, 0, 0) 70%,#56cec2);
@@ -187,13 +194,33 @@ section{
 }
 
 /* media query */
-/*
+
 @media (max-width: 1250px){
-    .presentation_Section{
-        padding: 0% 0% 90% 0%;
+    section{
+        display: inline-table;
+    }
+    .divImgAboutMe{
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        margin: 10% 0;
+    }
+    .divImgAboutMe div{
+        display: none;
+    }
+    .container{
+        /* max-width: 376px; */
+        width: auto;
+        padding-top: 10%;
+    }
+    .swiperDiv{
+        display: flex;
+        flex-direction: column;
+        margin: 0 !important;
     }
 }
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .presentation_Section{
         padding: 0% 0% 160% 0%;
     }
@@ -205,7 +232,7 @@ section{
     .image{
         margin: 25% 0 25% 25%;
     }
-} */
+    } */
 
 /*Certificados*/
 .sectionCertifications{
@@ -214,9 +241,6 @@ section{
 .certifications_Container{
     background-image: linear-gradient( 315deg, rgb(0, 0, 0) 70%,#004f47);
 }
-.certifications_Container h1{
-    padding-top: 7%;
-}
 
 swiper-container {
     margin: 20px auto;
@@ -224,7 +248,7 @@ swiper-container {
     height: 240px;
 }
 .swiperDiv{
-    margin: 0 250px;
+    margin: 0 25%;
     gap: 50px;
     justify-content: center;
 }
