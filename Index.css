@@ -104,6 +104,10 @@ h1{
     font-size: 16px;
 }
 
+.about_Me_Description_Text{
+    margin-bottom: 5%;
+}
+
 .about_Me_Description_Text h5:hover{
     transition: 0.5s;
     background-color: #00408f35;
@@ -117,8 +121,12 @@ h1{
 .about_Me_Description span{
     color:#00e1ff;
 }
+
+
+.divImgAboutMe{
+    height: 226px;
+}
 .image{
-    margin: 40% 0% 33% 37%;
     width: 45%;
     display: flex;
     justify-content: center;
@@ -126,10 +134,12 @@ h1{
 }
 .border{
     width: 45%;
-    outline: #005f6b double thick;
+    outline: #3c1f80 double thick;
     padding: 20%;
-    margin: -80% 40%;
+    margin: -50% 0 0 40%;
+    background-image: url(black-background.jpg);
 }
+
 
 /* Experience */
 .experience_Section{
