@@ -67,6 +67,16 @@ section{
 h1{
     margin-bottom: 30px;
 }
+
+/*
+BAACKGROUND MAIS ESFURMAÇADO - Flávio
+background: rgb(0,0,0);
+    background: -moz-linear-gradient(327deg, rgba(0,0,0,1) 0%, rgba(72,121,126,1) 220%);
+    background: -webkit-linear-gradient(327deg, rgba(0,0,0,1) 0%, rgba(72,121,126,1) 220%);
+    background: linear-gradient(327deg, rgba(0,0,0,1) 60%, rgba(72,121,126,1) 220%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColo
+
+*/
 /* SECTION PRESENTATION */
 .presentation_Section{
     background-image: linear-gradient( -45deg, rgb(0, 0, 0) 75%,#48797e);
@@ -248,19 +258,7 @@ h1{
         margin: 0 !important;
     }
 }
-/* @media (max-width: 600px){
-    .presentation_Section{
-        padding: 0% 0% 160% 0%;
-    }
-}
-@media (max-width: 992px) {
-    .about_Me_Section, .experience_Section{
-        padding: 30% 10% 80% 10%;
-    }
-    .image{
-        margin: 25% 0 25% 25%;
-    }
-    } */
+
 
 /*Certificados*/
 .sectionCertifications{
