@@ -22,8 +22,6 @@ function getFileTranslation() {
 
 function render(localizer) {
     console.log(localizer)
-
-    
 }
 
 getFileTranslation();
