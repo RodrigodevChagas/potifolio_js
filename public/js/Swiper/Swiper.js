@@ -51,9 +51,9 @@ function certificationsSwiper() {
     } else {
       element = elements[2];
     }
-    
+
     const aluraCertificateUrl = "https://cursos.alura.com.br/certificate/";
-    
+
     swiperElement(
       certification,
       `${aluraCertificateUrl + certificationUrl[index]}`,
@@ -81,6 +81,9 @@ function certificationsSwiper() {
       });
     });
   }
-  
+
   assignToObject();
   certificationsSwiper();
+  swiperEl.initialize()
+  swiperEl2.initialize()
+  swiperEl3.initialize()
