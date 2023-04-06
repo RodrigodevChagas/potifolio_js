@@ -38,7 +38,7 @@ function certificationsSwiper() {
   const certificationUrl = [
     ...cSharpCertificationsCredentials,
     ...pythonCertificationsCredentials,
-    ...frontEndCertifications,
+    ...frontEndCertificationsCredentials,
   ];
   const elements = [swiperEl, swiperEl2, swiperEl3];
   return Certification.map((certification, index) => {
@@ -52,7 +52,7 @@ function certificationsSwiper() {
       element = elements[2];
     }
 
-    const aluraCertificateUrl = "https://cursos.alura.com.br/certificate/";
+    const aluraCertificateUrl = !certificationUrl[index].includes("degree") ? "https://cursos.alura.com.br/certificate/" : "https://cursos.alura.com.br" ;
 
     swiperElement(
       certification,

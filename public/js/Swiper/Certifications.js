@@ -1,6 +1,7 @@
 
 
 export const cSharpCertifications = [
+  "C# e orientação a objetos",
   ".NET 5 e EF Core: Relacionando Entidades",
   "API Rest com .NET 5: Operações essenciais com verbos HTTP",
   "C# parte 1: Primeiros passos",
@@ -12,10 +13,10 @@ export const cSharpCertifications = [
   "C# parte 7: Array e tipos genéricos",
   "C# parte 8: List, lambda, linq",
   "C# Parte 9: entrada e saída (I/O) com streams",
-  "C# e orientação a objetos",
   "HTTP: Entendendo a web por baixo dos panos",
 ];
 export const cSharpCertificationsCredentials = [
+  "/degree/certificate/bd1bbfb4-d7fd-4ad6-8492-d5c9bee80b88",
   "e2aaa9c3-5c82-4829-84b5-c2db82fef38f",
   "3b562fc6-d049-4d4b-aec7-272f338a17fe",
   "7949fe59-5f0f-411a-849e-577f112e8578",
@@ -27,7 +28,6 @@ export const cSharpCertificationsCredentials = [
   "184a5756-6990-4b82-bafd-dd5edb781194",
   "7b3c7bd3-ef3e-4992-845f-8effeed19dcd",
   "e2efc085-9090-44cf-bfac-7afa57089153",
-  "bd1bbfb4-d7fd-4ad6-8492-d5c9bee80b88",
   "55e7695d-3391-4c05-a0f5-8a6b99f4143e",
 ];
 
@@ -44,7 +44,7 @@ export const pythonCertifications = [
   "String em Python: extraindo informações de uma URL",
 ];
 export const pythonCertificationsCredentials = [
-  "f743efa3-031b-46d8-8ff2-88bc0597dfb5",
+  "/degree/certificate/f743efa3-031b-46d8-8ff2-88bc0597dfb5",
   "86a59d85-25c1-4e6e-b003-7847a0f02c1d",
   "85d00f10-fff7-4c58-b5f4-bf67cb60e88a",
   "accb4319-e3db-45f2-aa21-7e853e3639e1",
