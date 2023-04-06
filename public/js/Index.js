@@ -13,7 +13,7 @@ function getFileTranslation() {
       : import("./ressource/indexPt.js");
 
 
-    // console.log("asdasd")
+    console.log("asdasd")
     req.then((data) => {
       render(data.localizer);
     });
