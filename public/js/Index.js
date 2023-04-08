@@ -9,8 +9,8 @@ function getFileTranslation() {
   buttonTranlation.addEventListener("click", (e) => {
     const translateCurrent = e.target.value;
     const req = false
-      ? import("./ressource/indexEn.js")
-      : import("./ressource/indexPt.js");
+      ? import("./resource/indexEn.js")
+      : import("./resource/indexPt.js");
 
 
     console.log("asdasd")
