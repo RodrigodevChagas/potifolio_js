@@ -22,8 +22,8 @@ function swiperElement(
   elements.innerHTML += `
       <swiper-slide class="swiperSlide">
       <div class="swiperTextAndLink">
-      <p>${certification}</p>
-      <a class="actionLinkCertifications" href="${certificationUrl}">See Certification</a>
+        <p>${certification}</p>
+        <a class="actionLinkCertifications" href="${certificationUrl}" target="_blank" >See Certification</a>
       </div>
       </swiper-slide>`;
 }
