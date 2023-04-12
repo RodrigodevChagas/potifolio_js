@@ -36,6 +36,6 @@ export const localizer = {
   o desenvolvimento do <span>Crawler</span> (extrai vagas de outros sites e trás para o nosso) usando expressões XPath
   para analisar HTML ou arquivos XML e coletando dados, indexei arquivos em um site <span>LMS</span> usando <span>AWS</span>,
   documentei e fiz casos de teste de todo o site BNE como um QA Analyst,
-  e resolvi bugs usando linguagem <span>SQL</span>.`
+  resolvi bugs usando linguagem <span>SQL</span>, além de desenvolver no sistema usando .NET.`
 };
 
