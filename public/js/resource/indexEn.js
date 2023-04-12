@@ -55,5 +55,6 @@ export const localizer = {
     expressions to get analysis of HTML or XML files and collecting
     data, indexed files into a <span>LMS</span> website using <span>AWS services</span>,
     documented and did test cases of pretty much the whole BNE site as QA Analyst,
-    and solved quick fix bugs by altering fields in the production database using <span>SQL</span>.`
+    solved quick fix bugs by altering fields in the production database using <span>SQL</span>
+    and mainly developing with .NET.`
 };
