@@ -1,4 +1,11 @@
 export const localizer = {
+  welcomeContent: `
+    <h5 class="welcome_Statement  align_Color_Fw_Ts">
+        <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">OLÁ, MUNDO!</p>
+        MEU NOME É RODRIGO R. CHAGAS.<br> ESTE É MEU PORTIFOLIO, SEJA BEM VINDO!
+    </h5>
+    <p class="little_Intro align_Color_Fw_Ts">
+    Atualmente focado em contruir e desenvolver aplicações acessíveis e práticas.</p>`,
   aboutMeTitle: `SOBRE MIM`,
   aboutMeText: `Olá, meu nome é <span>Rodrigo R. Chagas</span>, eu sou um desenvolvedor de software de 22 anos,
   atualmente focado em desenvolvimento backend com <span>Asp.Net</span>. Eu tinha 19 anos quando conheci o mundo
@@ -36,6 +43,9 @@ export const localizer = {
   o desenvolvimento do <span>Crawler</span> (extrai vagas de outros sites e trás para o nosso) usando expressões XPath
   para analisar HTML ou arquivos XML e coletando dados, indexei arquivos em um site <span>LMS</span> usando <span>AWS</span>,
   documentei e fiz casos de teste de todo o site BNE como um QA Analyst,
-  resolvi bugs usando linguagem <span>SQL</span>, além de desenvolver no sistema usando .NET.`
+  resolvi bugs usando linguagem <span>SQL</span>, além de desenvolver no sistema usando <span>.NET</span>.`,
+  projectsTitle:`PROJETOS`,
+  certificationsTitle:`CERTIFICAÇÕES`,
+  carouselFistSlide:`Aqui estão alguns dos meus projetos disponiveis no GitHub`
 };
 
