@@ -1,15 +1,7 @@
 "use strict";
 import("./Swiper/Swiper.js");
 import("./FetchApiGitHub.js");
-const req = import("./resource/indexEn.js");
-renderHTML(req);
-
-function renderHTML(req)
-{
-  req.then((data) => {
-    render(data.localizer);
-  });
-}
+renderHTML(import("./resource/indexEn.js"));
 
 const aboutMeTitle = document.querySelector("#aboutMe");
 const aboutMeEl = document.querySelector(".about_Me_Description");
@@ -19,17 +11,24 @@ const experienceEl = document.querySelector(".experience_Description");
 let btnClicked = false;
 function getFileTranslation() {
   const buttonTranlation = document.querySelector("#buttonTranlation");
-
+  
   buttonTranlation.addEventListener("click", (e) => {
-
+    
     btnClicked = !btnClicked;
-
+    
     const req = btnClicked
-      ? import("./resource/indexPt.js")
-      : import("./resource/indexEn.js");
+    ? import("./resource/indexPt.js")
+    : import("./resource/indexEn.js");
+    
+    
+    renderHTML(req);
+  });
+}
 
-
-      renderHTML(req);
+function renderHTML(req)
+{
+  req.then((data) => {
+    render(data.localizer);
   });
 }
 
@@ -39,6 +38,5 @@ function render(localizer) {
   experienceTitle.innerHTML = localizer.experienceTitle;
   experienceEl.innerHTML = localizer.experienceText;
 }
-
 
 getFileTranslation();
