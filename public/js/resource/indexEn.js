@@ -1,4 +1,12 @@
 export const localizer = {
+    welcomeContent: `
+    <h5 class="welcome_Statement  align_Color_Fw_Ts">
+        <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">HELLO, WORLD!</p>
+        MY NAME IS RODRIGO R. CHAGAS.<br> THIS IS MY PORTFOLIO, BE WELCOME!
+    </h5>
+    <p class="little_Intro align_Color_Fw_Ts">
+    Currently focused on building and developing accessible, human-centered
+    applications.</p>`,
     aboutMeTitle: `ABOUT ME`,
     aboutMeText: `Hi, my name is <span>Rodrigo R. Chagas</span>, I'm a 22
     year old web developer currently focused on backend development with
@@ -56,5 +64,8 @@ export const localizer = {
     data, indexed files into a <span>LMS</span> website using <span>AWS services</span>,
     documented and did test cases of pretty much the whole BNE site as QA Analyst,
     solved quick fix bugs by altering fields in the production database using <span>SQL</span>
-    and mainly developing with .NET.`
+    and mainly developing with <span>.NET</span>.`,
+    projectsTitle:`PROJECTS`,
+    certificationsTitle:`CERTIFICATIONS`,
+    carouselFistSlide:`Here are my projects available on GitHub`
 };
