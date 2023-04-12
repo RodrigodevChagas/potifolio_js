@@ -39,7 +39,7 @@ export default function getApiGitHub() {
                       <div class="carousel-item active" data-bs-interval="10000">
                         <div class="card w-100 img-fluid" >
                           <div class="card-body">
-                            <h5 class="card-title">Here are my projects available on GitHub</h5>
+                            <h5 class="card-title carouselFistSlide">Here are my projects available on GitHub</h5>
                           </div>
                         </div>
                       </div>`;
