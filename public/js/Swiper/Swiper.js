@@ -52,7 +52,9 @@ function certificationsSwiper() {
       element = elements[2];
     }
 
-    const aluraCertificateUrl = !certificationUrl[index].includes("degree") ? "https://cursos.alura.com.br/certificate/" : "https://cursos.alura.com.br" ;
+    const aluraCertificateUrl = !certificationUrl[index].includes("degree")
+    ? "https://cursos.alura.com.br/certificate/"
+    : "https://cursos.alura.com.br" ;
 
     swiperElement(
       certification,
