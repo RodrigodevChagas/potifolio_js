@@ -1,4 +1,9 @@
 export const localizer = {
+  
+  aboutMeMenu:'Sobre mim',
+  experienceMenu:'Experiências',
+  projectsMenu:'Projetos',
+  certificationMenu:'Certificações',
   welcomeContent: `
     <h5 class="welcome_Statement  align_Color_Fw_Ts">
         <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">OLÁ, MUNDO!</p>
