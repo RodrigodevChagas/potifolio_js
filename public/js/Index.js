@@ -10,6 +10,11 @@ const experienceTitle = document.querySelector("#experience");
 const experienceEl = document.querySelector(".experience_Description");
 const projectsTitle = document.querySelector("#projects");
 const certificationsTitle = document.querySelector("#certifications");
+const aboutMeMenu = document.querySelector(".aboutMeMenu");
+const experienceMenu = document.querySelector(".experienceMenu");
+const projectsMenu = document.querySelector(".projectsMenu");
+const certificationMenu = document.querySelector(".certificationMenu");
+
 let carouselFistSlide = certificationsTitle;
 let btnClicked = false;
 function getFileTranslation() {
@@ -36,6 +41,10 @@ function renderHTML(req)
 }
 
 function render(localizer) {
+  aboutMeMenu.innerHTML = localizer.aboutMeMenu
+  experienceMenu.innerHTML = localizer.experienceMenu
+  projectsMenu.innerHTML = localizer.projectsMenu
+  certificationMenu.innerHTML = localizer.certificationMenu
   welcomeContent.innerHTML = localizer.welcomeContent;
   aboutMeTitle.innerHTML = localizer.aboutMeTitle;
   aboutMeEl.innerHTML = localizer.aboutMeText;
