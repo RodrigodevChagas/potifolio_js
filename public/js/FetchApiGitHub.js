@@ -6,7 +6,6 @@ function datePatronization(_dateString) {
   let day = date.getUTCDate().toString().padStart(2, "0");
   let month = (date.getUTCMonth() + 1).toString().padStart(2, "0");
   let year = date.getUTCFullYear().toString();
-  //dateString = date;
 
   return `${month}/${day}/${year}`;
 }
