@@ -12,44 +12,31 @@ export const localizer = {
     Currently focused on building and developing accessible, human-centered
     applications.</p>`,
     aboutMeTitle: `ABOUT ME`,
-    aboutMeText: `Hi, my name is <span>Rodrigo R. Chagas</span>, I'm a 22
-    year old web developer currently focused on backend development with
-    <span>Asp.Net</span>. I was 19 when I first met the programming world as I was
-    coursing a college subject that demanded me to set my sight on learning the basics
-    of <span>C++</span> and, later, <span>Python</span>. Since then, I have been
-    studying to increase my knowledge as a developer, expanded my horizon and learned
-    how to create
-    responsive web pages with <span>HTML 5</span>, <span>CSS 3</span>,
-    <span>Bootstrap</span> and
-    <span>JavaScript</span>.<br>In the second half of 2021, I put all my effort into
-    learning more and more about this vast world of technology and, as I went
-    through new experiences exploring projects like a <span>Login System</span>,
-    <span>Bank System</span>,
-    <span>Crawler</span> application and built and sent request to some
-    <span>APIs</span>
-    to name a few, I'll present them in this project.<br>
-    Amongst the technologies I have experience with, are:
-    <span>SQLServer</span>, <span>RabbitMQ</span>, <span>Elasticsearch</span>,
-    <span>Kibana</span>, <span>MLS</span>, <span>Amazon Web Services</span>, <span>Azure
-    DevOpps</span> and <span>Blobb Storage</span>, <span>Git and GitHub</span> and
-    I've been a <span>QA
-        Analyst</span> too.<br>
-    Here are some of the .NET features and frameworks that I feel comfortable working
-    with: <span>Cookies management</span>, <span>Identity</span>, <span>Entity
-        Framework</span>, <span>Razor/Blazor pages</span>, <span>Jwt
-        Tokens</span>, <span>API REST</span>, <span>authentication</span> and
-    <span>authorization</span>, it's
-    fair to point out that I have knowledge on <span>DDD</span> and <span>TDD</span>
-    patterns, <span>Object Oriented programming Paradigm</span>, plus a solid base on
-    <span>SOLID</span>.<br>
-    On August 2022 I joined "Employer" as an intern, and I'm still working there at the
-    moment as part of the BNE squad, where I learned how a big company development
-    environment works, how to solve and deal with problems.<br>
-    Besides programming and it's huge world of possibilities, some of my qualities I can
-    name briefly are: I'm an <span>fully English speaker</span> and that I see myself as
-    a hustler, proactive man who never gives up and loves to breakdown complicated
-    situations and handle them properly, that's what I do since forever and want to
-    continue doing it.`,
+    aboutMeText: `
+    Hello, my name is <span>Rodrigo R. Chagas</span>, and I am a 23-year-old web developer currently focused on backend development with  <span>Asp.Net</span>.
+    My journey into the programming world began when I was 19 and taking a college subject that required me to learn the basics of <span>C++</span> and <span>Python</span>.
+    Since then, I have been continuously expanding my knowledge and skills as a developer.<br>
+
+    I have experience in creating responsive web pages with <span>HTML 5</span>, <span>CSS 3</span>, <span>Bootstrap</span>, and <span>JavaScript</span>.
+    In the second half of 2021, I dedicated myself to learning more about the vast world of technology.
+    Through my experiences working on projects such as a <span>Login System</span>, <span>Bank System</span>, and <span>Crawler</span> application,
+    and sending requests to various <span>APIs</span>, I have gained valuable experience that I will present in this project.
+
+    My experience includes working with a variety of technologies such as <span>SQLServer</span>, <span>RabbitMQ</span>, <span>Elasticsearch</span>,
+    <span>Kibana</span>, <span>MLS</span>, <span>Amazon Web Services</span>, <span>Azure DevOpps</span> and <span>Blobb Storage</span>,
+    <span>Git and GitHub</span>. Additionally, I have worked as a <span>QA Analyst</span>.<br>
+
+    I am comfortable working with several .NET features and frameworks, including <span>Cookies management</span>, <span>Identity</span>, <span>Entity
+    Framework</span>, <span>Razor/Blazor pages</span>, <span>Jwt
+    Tokens</span>, <span>API REST</span>, <span>authentication</span> and <span>authorization</span>. It's worth noting that I have knowledge of <span>DDD</span> and <span>TDD</span> patterns,
+    <span>Object-Oriented programming Paradigm</span>, and a solid base on <span>SOLID</span>.<br>
+
+    I joined "Employer" in August 2022 as an intern and am currently part of the BNE squad. Working at a large company has given me
+    valuable experience on how a development environment operates and how to solve and manage problems.<br>
+
+    Apart from programming, some of my qualities include being a <span>fluent English speaker</span> and a proactive, persistent individual
+    who excels at breaking down complicated situations and handling them efficiently. This is something that I have always
+    enjoyed doing and wish to continue doing in the future.`,
     experienceTitle: `EXPERIENCE`,
     experienceText: `Before entering the software business I used to work as a <span>Meter Reader</span>, at
     Tellus
