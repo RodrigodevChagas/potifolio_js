@@ -1,17 +1,28 @@
 export const localizer = {
-  
-  aboutMeMenu:'Sobre mim',
-  experienceMenu:'Experiências',
-  projectsMenu:'Projetos',
-  certificationMenu:'Certificações',
+  aboutMeMenu:`
+  Sobre mim
+  `,
+  experienceMenu:`
+  Experiências
+  `,
+  projectsMenu:`
+  Projetos
+  `,
+  certificationMenu:`
+  Certificações
+  `,
   welcomeContent: `
     <h5 class="welcome_Statement  align_Color_Fw_Ts">
         <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">OLÁ, MUNDO!</p>
         MEU NOME É RODRIGO R. CHAGAS.<br> ESTE É MEU PORTIFOLIO, SEJA BEM VINDO!
     </h5>
     <p class="little_Intro align_Color_Fw_Ts">
-    Atualmente focado em contruir e desenvolver aplicações acessíveis e práticas.</p>`,
-  aboutMeTitle: `SOBRE MIM`,
+        Atualmente focado em contruir e desenvolver aplicações acessíveis e práticas.
+    </p>
+  `,
+  aboutMeTitle: `
+  SOBRE MIM
+  `,
   aboutMeText: `
   Olá, meu nome é <span>Rodrigo R. Chagas</span>, sou um desenvolvedor de software de 22 anos, atualmente focado no desenvolvimento backend com <span>Asp.Net</span>.
   Eu tinha 19 anos quando entrei no mundo da programação, enquanto cursava uma faculdade que exigia que eu aprendesse o básico de <span>C++</span> e, posteriormente, <span>Python</span>.
@@ -33,8 +44,11 @@ export const localizer = {
   onde aprendi como funciona o ambiente de desenvolvimento de grandes empresas e como resolver e lidar com problemas.<br>
 
   Além da programação e de suas inúmeras possibilidades, algumas de minhas qualidades incluem: ser um falante <span>fluente de inglês</span> e me ver como uma pessoa batalhadora e proativa,
-  que nunca desiste e adora desvendar situações complicadas para resolvê-las da melhor forma possível. É isso que tenho feito desde sempre e pretendo continuar fazendo.`,
-  experienceTitle: `EXPERIÊNCIA`,
+  que nunca desiste e adora desvendar situações complicadas para resolvê-las da melhor forma possível. É isso que tenho feito desde sempre e pretendo continuar fazendo.
+  `,
+  experienceTitle: `
+  EXPERIÊNCIA
+  `,
   experienceText: `
   Antes de ingressar na área de programação, trabalhei como <span>Leiturista</span> na Tellus de janeiro de 2020 a abril de 2021, indo de casa em casa, conversando com centenas de pessoas
   e entregando as contas de luz. Aprendi a me comunicar melhor, a ter empatia e paciência (nem sempre é fácil cobrar dívidas das pessoas), mas principalmente aprendi a valorizar o trabalho e levá-lo a sério.
@@ -44,8 +58,14 @@ export const localizer = {
   Também indexei arquivos em um site <span>LMS</span> usando serviços <span>AWS</span>, documentei e executei testes de todo o site BNE como <span>Analista de Garantia de Qualidade (QA)</span>,
   corrigi rapidamente bugs alterando campos no banco de dados de produção usando <span>SQL</span> e desenvolvi principalmente com <span>.NET</span>.
   `,
-  projectsTitle:`PROJETOS`,
-  certificationsTitle:`CERTIFICAÇÕES`,
-  carouselFistSlide:`Aqui estão alguns dos meus projetos disponiveis no GitHub`
+  projectsTitle:`
+  PROJETOS
+  `,
+  certificationsTitle:`
+  CERTIFICAÇÕES
+  `,
+  carouselFistSlide:`
+  Aqui estão alguns dos meus projetos disponiveis no GitHub
+  `
 };
 
