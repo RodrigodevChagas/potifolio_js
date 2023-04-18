@@ -38,24 +38,15 @@ export const localizer = {
     who excels at breaking down complicated situations and handling them efficiently. This is something that I have always
     enjoyed doing and wish to continue doing in the future.`,
     experienceTitle: `EXPERIENCE`,
-    experienceText: `Before entering the software business I used to work as a <span>Meter Reader</span>, at
-    Tellus
-    , from January of 2020 to April 2021, going from house to house, talking to hundreds of
-    people and handing their light bill.
-    There I learned how to communicate better, have empathy, and to be patience (delivering
-    debts to people is not easy), but
-    mostly how to value work and take it as seriously as possible.<br>
-    Currently I am working at Employer, as a intern and part of the BNE squad, which detains 2
-    of the 2 biggest website of Human Resources
-    in Brazil. There I got to experience how to deal with software in a professional level, as
-    I: delivered some projects <span>Catalog, CRUD, Shopping Cart</span>, collaborated to a new <span>tool of
-    management</span> of one of the company's websites, had contact with the company's
-    <span>Crawler</span> (gets jobs from other sites and publishes them in our) using XPath
-    expressions to get analysis of HTML or XML files and collecting
-    data, indexed files into a <span>LMS</span> website using <span>AWS services</span>,
-    documented and did test cases of pretty much the whole BNE site as QA Analyst,
-    solved quick fix bugs by altering fields in the production database using <span>SQL</span>
-    and mainly developing with <span>.NET</span>.`,
+    experienceText: `
+    Prior to entering the software industry, I worked as a <span>Meter Reader</span> at Tellus from January 2020 to April 2021. My job involved visiting households, interacting with people,
+    and handing over their electricity bills. This experience taught me the importance of effective communication, empathy, patience, and most importantly, the value of work and taking it seriously.<br>
+
+    Currently, I am interning at Employer, where I am a part of the BNE squad. Employer is one of the leading human resource websites in Brazil. During my time here,
+    I have had the opportunity to work on various projects such as <span>Catalog</span>, <span>CRUD</span>, and <span>Shopping Cart</span>, collaborate on a new website management tool, work with the company's <span>Crawler</span>
+    using <span>XPath</span> expressions to analyze <span>HTML</span> or <span>XML</span> files and collect data, index files into a <span>LMS</span> website using AWS services, and document and perform test cases of the entire BNE site as a <span>QA Analyst</span>.
+    In addition, I have been able to fix quick bugs by modifying fields in the production database using <span>SQL</span> and develop with <span>.NET</span>. I am proficient in <span>HTML</span>, <span>C#</span>, <span>Python</span>, <span>C++</span>, and <span>JavaScript</span>.
+    `,
     projectsTitle:`PROJECTS`,
     certificationsTitle:`CERTIFICATIONS`,
     carouselFistSlide:`Here are my projects available on GitHub`
