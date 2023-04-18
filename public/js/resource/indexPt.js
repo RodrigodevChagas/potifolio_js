@@ -35,17 +35,15 @@ export const localizer = {
   Além da programação e de suas inúmeras possibilidades, algumas de minhas qualidades incluem: ser um falante <span>fluente de inglês</span> e me ver como uma pessoa batalhadora e proativa,
   que nunca desiste e adora desvendar situações complicadas para resolvê-las da melhor forma possível. É isso que tenho feito desde sempre e pretendo continuar fazendo.`,
   experienceTitle: `EXPERIÊNCIA`,
-  experienceText: `Antes de me aventurar no mundo da programação trabalhei como <span>Leiturista</span>, na Tellus,
-  de Janeiro de 2020 à Abril de 2021, indo de casa em casa, se comunicando com centenas de pessoas e as entregando
-  a conta da luz.
-  Lá aprendi como me comunicar bem, ter empatia, e a ser paciente, mas o mais importante, como valorizar o serviço e o levar a sério.<br>
-  Hoje faço parte do time do BNE, que tem 2
-  dos 2 maiores sites de RH no Brasil. Lá vivencio como é desenvolver software a nível profissional, alguns dos projetos que lá desenvolvi desde que
-  entrei <span>Catálogo, CRUD, Carrinho de Compras</span>, colaborei com uma nova <span>ferramenta de desenvolvimento</span> do site da empresa, tive contato com
-  o desenvolvimento do <span>Crawler</span> (extrai vagas de outros sites e trás para o nosso) usando expressões XPath
-  para analisar HTML ou arquivos XML e coletando dados, indexei arquivos em um site <span>LMS</span> usando <span>AWS</span>,
-  documentei e fiz casos de teste de todo o site BNE como um QA Analyst,
-  resolvi bugs usando linguagem <span>SQL</span>, além de desenvolver no sistema usando <span>.NET</span>.`,
+  experienceText: `
+  Antes de ingressar na área de programação, trabalhei como <span>Leiturista</span> na Tellus de janeiro de 2020 a abril de 2021, indo de casa em casa, conversando com centenas de pessoas
+  e entregando as contas de luz. Aprendi a me comunicar melhor, a ter empatia e paciência (nem sempre é fácil cobrar dívidas das pessoas), mas principalmente aprendi a valorizar o trabalho e levá-lo a sério.
+  Atualmente faço parte da equipe do BNE, que possui os 2 maiores sites de Recursos Humanos do Brasil. Lá, vivencio como é desenvolver software em nível profissional.<br>
+  Alguns dos projetos em que trabalhei desde que comecei foram o <span>Catálogo</span>, o <span>CRUD</span> e o <span>Carrinho de Compras</span>. Colaborei na criação de uma nova ferramenta de gerenciamento do site da empresa
+  e tive contato com o desenvolvimento do <span>Crawler</span>, que extrai vagas de outros sites e as publica em nosso site, usando expressões <span>XPath</span> para analisar arquivos <span>HTML</span> ou <span>XML</span> e coletar dados.
+  Também indexei arquivos em um site <span>LMS</span> usando serviços <span>AWS</span>, documentei e executei testes de todo o site BNE como <span>Analista de Garantia de Qualidade (QA)</span>,
+  corrigi rapidamente bugs alterando campos no banco de dados de produção usando <span>SQL</span> e desenvolvi principalmente com <span>.NET</span>.
+  `,
   projectsTitle:`PROJETOS`,
   certificationsTitle:`CERTIFICAÇÕES`,
   carouselFistSlide:`Aqui estão alguns dos meus projetos disponiveis no GitHub`
