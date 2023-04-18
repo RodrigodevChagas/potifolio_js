@@ -1,17 +1,31 @@
 export const localizer = {
-    aboutMeMenu:'About me',
-    experienceMenu:'Experiences',
-    projectsMenu:'Projects',
-    certificationMenu:'Certification',
+    aboutMeMenu:`
+    About me
+    `,
+    experienceMenu:`
+    Experiences
+    `
+    ,
+    projectsMenu:`
+    Projects
+    `
+    ,
+    certificationMenu:`
+    Certification
+    `
+    ,
     welcomeContent: `
-    <h5 class="welcome_Statement  align_Color_Fw_Ts">
-        <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">HELLO, WORLD!</p>
-        MY NAME IS RODRIGO R. CHAGAS.<br> THIS IS MY PORTFOLIO, BE WELCOME!
-    </h5>
-    <p class="little_Intro align_Color_Fw_Ts">
-    Currently focused on building and developing accessible, human-centered
-    applications.</p>`,
-    aboutMeTitle: `ABOUT ME`,
+        <h5 class="welcome_Statement  align_Color_Fw_Ts">
+            <p class="welcome_Statement welcome_Statement_PColor align_Color_Fw_Ts">HELLO, WORLD!</p>
+            MY NAME IS RODRIGO R. CHAGAS.<br> THIS IS MY PORTFOLIO, BE WELCOME!
+        </h5>
+        <p class="little_Intro align_Color_Fw_Ts">
+        Currently focused on building and developing accessible, human-centered
+        applications.</p>
+    `,
+    aboutMeTitle: `
+    ABOUT ME
+    `,
     aboutMeText: `
     Hello, my name is <span>Rodrigo R. Chagas</span>, and I am a 23-year-old web developer currently focused on backend development with  <span>Asp.Net</span>.
     My journey into the programming world began when I was 19 and taking a college subject that required me to learn the basics of <span>C++</span> and <span>Python</span>.
@@ -36,8 +50,11 @@ export const localizer = {
 
     Apart from programming, some of my qualities include being a <span>fluent English speaker</span> and a proactive, persistent individual
     who excels at breaking down complicated situations and handling them efficiently. This is something that I have always
-    enjoyed doing and wish to continue doing in the future.`,
-    experienceTitle: `EXPERIENCE`,
+    enjoyed doing and wish to continue doing in the future.
+    `,
+    experienceTitle: `
+    EXPERIENCE
+    `,
     experienceText: `
     Prior to entering the software industry, I worked as a <span>Meter Reader</span> at Tellus from January 2020 to April 2021. My job involved visiting households, interacting with people,
     and handing over their electricity bills. This experience taught me the importance of effective communication, empathy, patience, and most importantly, the value of work and taking it seriously.<br>
@@ -47,7 +64,13 @@ export const localizer = {
     using <span>XPath</span> expressions to analyze <span>HTML</span> or <span>XML</span> files and collect data, index files into a <span>LMS</span> website using AWS services, and document and perform test cases of the entire BNE site as a <span>QA Analyst</span>.
     In addition, I have been able to fix quick bugs by modifying fields in the production database using <span>SQL</span> and develop with <span>.NET</span>. I am proficient in <span>HTML</span>, <span>C#</span>, <span>Python</span>, <span>C++</span>, and <span>JavaScript</span>.
     `,
-    projectsTitle:`PROJECTS`,
-    certificationsTitle:`CERTIFICATIONS`,
-    carouselFistSlide:`Here are my projects available on GitHub`
+    projectsTitle:`
+    PROJECTS
+    `,
+    certificationsTitle:`
+    CERTIFICATIONS
+    `,
+    carouselFistSlide:`
+    Here are my projects available on GitHub
+    `
 };
