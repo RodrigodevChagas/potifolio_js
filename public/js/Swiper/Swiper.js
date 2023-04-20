@@ -34,7 +34,8 @@ async function alternateLanguage(){
     certificationUrl,
     elements
   ) {
-    if (!btnClicked) certificationUrl +=`?lang=en`
+    certificationUrl += !btnClicked ? `?lang=en` : `?lang=pt_BR`;
+
     elements.innerHTML += `
         <swiper-slide class="swiperSlide">
         <div class="swiperTextAndLink">
