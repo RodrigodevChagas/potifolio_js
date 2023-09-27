@@ -11,7 +11,7 @@ main{
 }
 /* NavBar */
 .nav_Bar_Cor{
-    background-color:#1f1f1f;
+    background-color:#375c5f70;
 }
 .nav_Bar_Items_Font_Color{
     color: white;
@@ -31,9 +31,18 @@ main{
 }
 
 /* icones */
+.translationIcons{
+    transition: 1s;
+    transform: 1s;
+    width: 40%;
+}
+
+.translationIcon{
+    width: 40%;
+}
 .social_Media_Icons_Div{
     left: 3%;
-    top: 80%;
+    top: 70%;
     gap: 10px;
 }
 a {
@@ -50,7 +59,7 @@ section{
 }
 .container{
     max-width: 1048px;
-    padding-top: 10%;
+    padding: 7%;
 }
 
 .align_Color_Fw_Ts{
@@ -150,7 +159,9 @@ background: rgb(0,0,0);
 .social_Media_Icons_Div2{
     display: none;
 }
-
+.translationIconsMobile{
+    display: none;
+}
 /* Experience */
 .experience_Section{
     background-image: linear-gradient( 45deg, rgb(0, 0, 0) 70%,#56cec2);
@@ -244,7 +255,6 @@ background: rgb(0,0,0);
         display: none;
     }
     .container{
-        /* max-width: 376px; */
         width: auto;
         padding-top: 10%;
     }
@@ -256,6 +266,15 @@ background: rgb(0,0,0);
         display: flex;
         flex-direction: column;
         margin: 0 !important;
+    }
+}
+@media (max-width: 991.20px){
+    
+    .translationIcon{
+        width: 100%;
+    }
+    .translationIconsMobile{
+        display: flex;
     }
 }
 
