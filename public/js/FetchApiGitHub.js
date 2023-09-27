@@ -49,10 +49,9 @@ export default function getApiGitHub() {
                           <div class="card w-100">
                               <div class="card-body">
                                   <h5 class="card-title">${item.name}</h5>
-                                  <h6 class="card-subtitle mb-2 ">Language: ${item.language}</h6>
-                                  <h6 class="card-subtitle mb-2 ">Creation Date: ${date}</h6>
-                                  <a href="${item.html_url}" class="card-link">Github Repository</a>
-                                  <a href="#" class="card-link">Linkedin video project link</a>
+                                  <h6 class="card-subtitle mb-2 ">${item.language}</h6>
+                                  <h6 class="card-subtitle mb-2 ">${date}</h6>
+                                  <a href="${item.html_url}" class="card-link">Github Repos</a>
                               </div>
                           </div>
                       </div>

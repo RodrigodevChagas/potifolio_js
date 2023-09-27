@@ -14,13 +14,15 @@ const aboutMeMenu = document.querySelector(".aboutMeMenu");
 const experienceMenu = document.querySelector(".experienceMenu");
 const projectsMenu = document.querySelector(".projectsMenu");
 const certificationMenu = document.querySelector(".certificationMenu");
+const translationIcons = document.querySelector(".translationIcons");
+const translationIconsMobile = document.querySelector(".translationIconsMobile");
 
 let carouselFistSlide = certificationsTitle;
 let btnClicked = false;
 function getFileTranslation() {
-  const buttonTranlation = document.querySelector("#buttonTranlation");
+  const buttonTranslation = document.querySelector("#buttonTranslation");
 
-  buttonTranlation.addEventListener("click", (e) => {
+  buttonTranslation.addEventListener("click", (e) => {
     btnClicked = !btnClicked;
     carouselFistSlide = document.querySelector(".carouselFistSlide");
 
@@ -41,6 +43,8 @@ function renderHTML(req)
 }
 
 function render(localizer) {
+  translationIcons.innerHTML = localizer.translationIcons;
+  translationIconsMobile.innerHTML = localizer.translationIcons;
   aboutMeMenu.innerHTML = localizer.aboutMeMenu
   experienceMenu.innerHTML = localizer.experienceMenu
   projectsMenu.innerHTML = localizer.projectsMenu

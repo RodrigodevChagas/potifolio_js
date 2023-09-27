@@ -9,7 +9,7 @@ const swiperEl2 = document.querySelector(".mySwiper2");
 const swiperEl3 = document.querySelector(".mySwiper3");
 const swipers = [swiperEl, swiperEl2, swiperEl3];
 
-const buttonTranslation = document.querySelector("#buttonTranlation");
+const buttonTranslation = document.querySelector("#buttonTranslation");
 let btnClicked = false;
 
 buttonTranslation.addEventListener("click", (e) => {
@@ -34,7 +34,7 @@ async function alternateLanguage(){
     certificationUrl,
     elements
   ) {
-    certificationUrl += !btnClicked ? `?lang=en` : `?lang=pt_BR`;
+    certificationUrl += btnClicked ? `?lang=pt_BR` : `?lang=en`;
 
     elements.innerHTML += `
         <swiper-slide class="swiperSlide">
